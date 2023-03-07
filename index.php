@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Just Another WordPress Site</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat:400,700&display=swap" rel="stylesheet">
+<?php
+/**
+ * 
+ * index.
+ * 
+ * @since 1.0
+ */
+?>
 
-
-</head>
-
-<body>
-<header class="site-header" role="banner">
-    <div class="header-inner section-inner">
-
-        <div class="site-header__logo">
-            <a href="/ied">
-                Hello, I'm a WordPress Site
-            </a>
-        </div>
-
-        <nav class="site-header__nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
+<?php get_header(); ?>
 <main class="site-content" role="main">
 
     <div class="section-inner">
@@ -47,7 +25,7 @@
         <ul class="post-list">
             <li>
                 <div class="post-thumb">
-                    <img src="assets/images/widget-1.jpg">
+                    <img src="<?php echo bloginfo( 'template_directory' ); ?>/assets/images/widget-1.jpg">
                 </div>
 
                 <div class="post-entry">
@@ -59,7 +37,7 @@
 
             <li>
                 <div class="post-thumb">
-                    <img src="assets/images/widget-2.jpg">
+                    <img src="<?php echo bloginfo( 'template_directory' ); ?>/assets/images/widget-2.jpg">
                 </div>
 
                 <div class="post-entry">
@@ -71,7 +49,7 @@
 
             <li>
                 <div class="post-thumb">
-                    <img src="assets/images/widget-3.jpg">
+                    <img src="<?php echo bloginfo( 'template_directory' ); ?>/assets/images/widget-3.jpg">
                 </div>
 
                 <div class="post-entry">
@@ -83,7 +61,7 @@
 
             <li>
                 <div class="post-thumb">
-                    <img src="assets/images/widget-4.jpg">
+                    <img src="<?php echo bloginfo( 'template_directory' ); ?>/assets/images/widget-4.jpg">
                 </div>
 
                 <div class="post-entry">
@@ -107,29 +85,6 @@
     </div>
 
 </main>
+<?php get_footer(); 
 
-<footer class="site-footer">
-
-    <div class="section-inner">
-
-        <div class="site-footer__credits">
-
-            <p class="footer-copyright">
-                &copy; 2020 <a href="#">WordPress Site</a>
-            </p><!-- .footer-copyright -->
-
-            <p>
-                <a href="https://wordpress.org/">
-                    Powered by WordPress
-                </a>
-            </p><!-- .powered-by-wordpress -->
-
-        </div><!-- .footer-credits -->
-
-    </div><!-- .section-inner -->
-
-</footer><!-- #site-footer -->
-
-
-</body>
-</html>
+?>
