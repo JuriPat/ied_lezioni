@@ -23,15 +23,12 @@
 
         <div class="site-header__logo">
             <a href="/ied">
-                Hello, I'm a WordPress Site
+                <?php echo bloginfo( 'name' ); ?>
             </a>
         </div>
 
-        <nav class="site-header__nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+        <?php
+        get_template_part( 'template-parts/nav-menu' );
+        ?>
     </div>
 </header>

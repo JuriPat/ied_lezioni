@@ -25,6 +25,10 @@ function tema_ied_after_setup_theme() {
     add_theme_support( 'post-thumbnails' );
 
     add_theme_support( 'menus' );
+    register_nav_menus( array(
+        'primary-navigation' => 'Primary Navigation',
+    ) );
+
 }
 
 add_action( 'after_setup_theme', 'tema_ied_after_setup_theme' );
