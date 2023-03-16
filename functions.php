@@ -25,6 +25,11 @@ function tema_ied_after_setup_theme() {
     add_theme_support( 'post-thumbnails' );
 
     add_theme_support( 'menus' );
+
+    set_post_thumbnail_size( 170, 170 );
+
+    add_image_size( 'custom_size', 1200, 900 );
+
     register_nav_menus( array(
         'primary-navigation' => 'Primary Navigation',
     ) );
