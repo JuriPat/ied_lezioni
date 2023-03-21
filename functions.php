@@ -6,6 +6,7 @@
  * @since 1.0
  */
 
+ require_once dirname(__FILE__). '/inc/template-tags.php';
 //questa funzione serve per includere i file css e js del tema
 function tema_ied_enqueue_style_and_scripts() {
     $theme_version = wp_get_theme()->get( 'Version' );

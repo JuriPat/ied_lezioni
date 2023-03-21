@@ -22,7 +22,7 @@
     <div class="header-inner section-inner">
 
         <div class="site-header__logo">
-            <a href="/ied">
+            <a href="<?php echo esc_url( home_url() ); ?>">
                 <?php echo bloginfo( 'name' ); ?>
             </a>
         </div>
